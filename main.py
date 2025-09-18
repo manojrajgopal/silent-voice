@@ -11,12 +11,10 @@ import keyboard
 from concurrent.futures import ThreadPoolExecutor
 import os
 
-
 # pydantic model for the chat output
 class ChaplinOutput(BaseModel):
     list_of_changes: str
     corrected_text: str
-
 
 class Chaplin:
     def __init__(self):
